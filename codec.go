@@ -20,7 +20,8 @@ package grpc
 
 import (
 	"google.golang.org/grpc/encoding"
-	_ "google.golang.org/grpc/encoding/proto" // to register the Codec for "proto"
+	_ "google.golang.org/grpc/encoding/proto"     // to register the Codec for "proto"
+	_ "google.golang.org/grpc/encoding/protojson" //to register the Codec for "protojson"
 )
 
 // baseCodec contains the functionality of both Codec and encoding.Codec, but
